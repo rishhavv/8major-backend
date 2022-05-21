@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
 
 app.use("/major", volunteer);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("server is up");
 });
